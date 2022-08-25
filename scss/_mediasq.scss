@@ -1,0 +1,137 @@
+
+/* -------------------- @MEDIAS ------------------*/
+
+/* MOVIL VERTICAL ------ 1 A 320 */
+/* MOVIL HORIZONTAL -- 321 A 480 */
+/* TABLET VERTICAL --- 481 A 768*/
+/* TABLET HORIZONTAL - 769 A 1024 */
+/* DESKTOP 1 -------- 1024 A 1200 */
+/* DESKTOP 2 -------- 1200 A 1399 */
+
+@media all and (max-width: 480px){
+    .heroImageContainer {
+        display: $d-flex;
+    }
+
+    .img.marcas {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .secciones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .secciones {
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Media del Header Menu */
+@keyframes header_menu_activar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media del Header Menu ul */
+@media screen and (min-width: 768px) {
+    .header {
+        display: $d-flex;
+        flex-direction: column;
+        justify-content: space-around;
+       /*  justify-content: space-between; */
+        align-items: center;
+
+        &-top {
+            padding-bottom: 0px;
+        }
+    }
+
+    .header-menu {
+        padding-top: 0;
+        display: block !important;
+    }
+
+    .header-menu ul {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .header-btn {
+        display: $d-flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+
+@media screen and (max-width: 325px) {
+    .header {
+        display: $d-flex;
+        flex-direction: column;
+        justify-content: space-around;
+       /*  justify-content: space-between; */
+        align-items: center;
+
+        &-top {
+            padding-bottom: 0px;
+        }
+    }
+
+    .header-menu {
+        padding-top: 0;
+        display: block !important;
+    }
+
+    .header-menu ul {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .header-btn {
+        display: block;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

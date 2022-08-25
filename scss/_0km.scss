@@ -1,0 +1,12 @@
+
+/* Section 0KM */
+
+.section0km {
+    margin: 10px 20px;
+    padding: 8vw;
+    display: grid;
+    grid-area: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}

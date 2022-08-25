@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<!-- SEO -->
+	<meta name="description" content="Consultanos por cualquier duda o consulta. Queres vender tu auto? Queres un 0km? Charlemos!">
+	<meta name="keywords" content="Autos, Concesionario, Contacto, Consulta planes de ahorro, Consulta Autos, MOZIONE">
+    <meta name="author" content="Alan Gabriel Ozzan">
+	<!-- Estilos Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/estilos.css">
+	<!-- Imagen solapa ICO -->
+	<link rel="shortcut icon" href="../Assets/Img/iconoM.ico">
+	<!-- Titulo -->
+	<title>Mozione - Contactanos</title>
+
+</head>
+
+<body>
+	<!-- CABECERA CON 5 PESTAÑAS + LOGO -->
+	<!-- Logo -->
+	<header class="header">
+		<div class="header-top">
+			<a class="header-logo" href="../index.html"><img class="logo" src="../assets/Img/Logo-1024x279.png"
+					alt="Mozione"> </a>
+			<button class="header-btn">=</button>
+		</div>
+		<!-- Menu Navegador -->
+		<nav class="header-menu">
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/quienes_somos.html">Quienes Somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/0km.html">0 Km</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/usados.html">Usados</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- JS Menu Hamburguesa -->
+	<script>
+		const header_btn = document.querySelector('.header-btn')
+		const header_menu = document.querySelector('.header-menu')
+		header_btn.addEventListener('click', () => {
+			console.log(header_menu.style.display)
+			if (header_menu.style.display != 'block') {
+				header_menu.style.display = 'block'
+				header_btn.innerHTML = 'X'
+			} else {
+				header_menu.style.display = 'none'
+				header_btn.innerHTML = '='
+			}
+		})
+	</script>
+
+	<main>
+		<!-- FORMULARIO DE CONTACTO -->
+		<h1 class="p-4">Dejanos tu Consulta</h1>
+		<form class="formulario" action="">
+			<div class="mb-3">
+				<label for="formGroupExampleInput" class="form-label">Nombre</label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre">
+			</div>
+			<div class="mb-3">
+				<label for="formGroupExampleInput2" class="form-label">Apellido</label>
+				<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su apellido">
+			</div>
+			<div class="mb-3">
+				<label for="formGroupExampleInput2" class="form-label">Telefono</label>
+				<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su telefono">
+			</div>
+			<div class="mb-3">
+				<label for="exampleFormControlInput1" class="form-label">Motivo de la consulta</label>
+				<select class="form-select" aria-label="Default select example">
+					<option selected>Seleccione una Opcion</option>
+					<option value="1">0 Km</option>
+					<option value="2">Usado</option>
+					<option value="3">Moto</option>
+					<option value="4">Plan de Ahorro</option>
+					<option value="5">Financiados</option>
+					<option value="6">Detailing</option>
+				</select>
+			</div>
+			<div class="mb-3">
+				<label for="exampleFormControlInput1" class="form-label">E-mail</label>
+				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su mail">
+			</div>
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+					placeholder="Ingrese su consulta"></textarea>
+			</div>
+
+			<input type="button" value="Enviar">
+
+			</fieldset>
+
+		</form>
+
+
+	</main>
+
+
+	<!-- INICIO FOOTER-->
+
+	<footer class="footer bg-black">
+		<div class="container-fluid">
+			<div class="row p-5 pb-2">
+				<div class="img-fluid">
+					<img src="../assets/Img/logo-web_Mesa-de-trabajo-1.png" class="img-fluid" alt="Logo Mozione">
+				</div>
+			</div>
+
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Links</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Inicio</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Quienes Somos</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Usados</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Financiados</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Detailing</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Motos</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Privacidad</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Politica de Privacidad</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Reclamos</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Soporte</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">FAQ</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Contacto</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Instagram</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Facebook</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Twitter</a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+
+</body>
+
+</html>

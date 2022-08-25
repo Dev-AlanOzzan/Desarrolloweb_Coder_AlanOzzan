@@ -1,0 +1,373 @@
+/* VARIABLES DE COLORES */
+/* $color_principal: #0a3244 */
+h1 {
+  color: #0a3244;
+  text-shadow: 2px 4px 4px rgb(43, 42, 42), 0 0 25px lightgray, 0 0 5px rgb(86, 192, 224);
+  text-align: center;
+}
+
+a {
+  font-family: Cambria;
+  text-decoration: none;
+  color: black;
+}
+
+/* @import 'header'; */
+.Quienes_Somos {
+  margin: 10px 20px;
+  padding: 8vw;
+  position: relative;
+  width: 100rw;
+  height: 100rh;
+  display: grid;
+  grid-area: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section 0KM */
+.section0km {
+  margin: 10px 20px;
+  padding: 8vw;
+  display: grid;
+  grid-area: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionUsados {
+  margin: 10px 20px;
+  padding: 5vw;
+  display: grid;
+  grid-area: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Contacto */
+.formulario {
+  margin: 10px 20px;
+  padding: 8vw;
+  display: grid;
+  grid-area: 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @import 'footer'; */
+/* -------------------- @MEDIAS ------------------*/
+/* MOVIL VERTICAL ------ 1 A 320 */
+/* MOVIL HORIZONTAL -- 321 A 480 */
+/* TABLET VERTICAL --- 481 A 768*/
+/* TABLET HORIZONTAL - 769 A 1024 */
+/* DESKTOP 1 -------- 1024 A 1200 */
+/* DESKTOP 2 -------- 1200 A 1399 */
+@media all and (max-width: 480px) {
+  .heroImageContainer {
+    display: flex;
+  }
+  .img.marcas {
+    width: 350px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+  .secciones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 325px) {
+  .secciones {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Media del Header Menu */
+@-webkit-keyframes header_menu_activar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes header_menu_activar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Media del Header Menu ul */
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*  justify-content: space-between; */
+    align-items: center;
+  }
+  .header-top {
+    padding-bottom: 0px;
+  }
+  .header-menu {
+    padding-top: 0;
+    display: block !important;
+  }
+  .header-menu ul {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .header-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 325px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*  justify-content: space-between; */
+    align-items: center;
+  }
+  .header-top {
+    padding-bottom: 0px;
+  }
+  .header-menu {
+    padding-top: 0;
+    display: block !important;
+  }
+  .header-menu ul {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .header-btn {
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* -------------------- HEADER ------------------*/
+.header {
+  background-color: #3a7b99;
+  padding: 25px;
+}
+.header-top {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-logo {
+  margin: 0;
+  max-height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 75px;
+}
+
+.header-btn {
+  width: 50px;
+  height: 60px;
+  font-size: 35px;
+}
+
+.header-menu {
+  display: none;
+  padding-bottom: 10px;
+  -webkit-animation: header_menu_activar 3s;
+          animation: header_menu_activar 3s;
+}
+
+.header-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding-top: 20px;
+}
+.header-menu ul .nav-link {
+  background-color: #a5def1;
+  font-weight: 700;
+  margin: 0px 50px 0px 0px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: rgb(20, 35, 173);
+}
+.header-menu ul .nav-link:hover {
+  box-shadow: 3px 5px 5px #70afce;
+  color: #0A5588;
+}
+.header-menu ul .nav-link .nav-link:active {
+  background-color: aqua;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+/* --------- Secciones con GRIDS ----------- */
+.contenedor {
+  width: auto;
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.secciones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Anidacion cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  color: aliceblue;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+.card .textosA {
+  height: 100%;
+  color: #0A5588;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .textosB {
+  height: 100%;
+  color: #0a3244;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+
+img.marcas {
+  height: auto;
+  width: auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+/* -------------------- VIEWS ------------------*/
+/* .Quienes_Somos {
+    margin: 10px 20px;
+    padding: 8vw;
+    position: relative;
+    width: 100rw;
+    height: 100rh;
+    display: grid;
+    grid-area: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+} */
+/* .section0km {
+    margin: 10px 20px;
+    padding: 8vw;
+    display: grid;
+    grid-area: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+} */
+/* .sectionUsados {
+    margin: 10px 20px;
+    padding: 5vw;
+    display: grid;
+    grid-area: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+} */
+/* .formulario {
+    margin: 10px 20px;
+    padding: 8vw;
+    display: grid;
+    grid-area: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+} */
+/* h1 {
+    color: $color_principal;
+    text-shadow: 2px 4px 4px rgb(43, 42, 42), 0 0 25px lightgray, 0 0 5px rgb(86, 192, 224);
+    text-align: center;
+} */
+/* -------------------- FOOTER ------------------*/
+footer {
+  font-family: Cambria;
+  color: aliceblue;
+  display: flex;
+  min-height: 50px;
+  background-color: rgb(22, 13, 2);
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */

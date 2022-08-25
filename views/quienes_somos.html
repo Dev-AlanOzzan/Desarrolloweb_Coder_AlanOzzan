@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<!-- SEO -->
+	<meta name="description" content="Mozione. Conozca nuestra vision y valores. Los mejores autos de Zona Oeste.">
+	<meta name="keywords" content="Autos, Vision Concesionario, Conozcanos Mozione, Nuestros planes, Autos seleccionados">
+    <meta name="author" content="Alan Gabriel Ozzan">
+	<!-- Estilos Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/estilos.css">
+	<!-- Imagen solapa ICO -->
+	<link rel="shortcut icon" href="../Assets/Img/iconoM.ico">
+	<!-- Titulo -->
+	<title>Mozione - Home</title>
+</head>
+
+<body>
+	<!-- CABECERA CON 5 PESTAÑAS + LOGO -->
+	<!-- Logo -->
+	<header class="header">
+		<div class="header-top">
+			<a class="header-logo" href="../index.html"><img class="logo" src="../assets/Img/Logo-1024x279.png"
+					alt="Mozione"> </a>
+			<button class="header-btn">=</button>
+		</div>
+		<!-- Menu navegador -->
+		<nav class="header-menu">
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/quienes_somos.html">Quienes Somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/0km.html">0 Km</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/usados.html">Usados</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../views/contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- JS Menu hamburguesa -->
+	<script>
+		const header_btn = document.querySelector('.header-btn')
+		const header_menu = document.querySelector('.header-menu')
+		header_btn.addEventListener('click', () => {
+			console.log(header_menu.style.display)
+			if (header_menu.style.display != 'block') {
+				header_menu.style.display = 'block'
+				header_btn.innerHTML = 'X'
+			} else {
+				header_menu.style.display = 'none'
+				header_btn.innerHTML = '='
+			}
+		})
+	</script>
+
+	<main>
+		<!-- QUIENES SOMOS -->
+
+		<section class="Quienes_Somos">
+			<h1 class="Quienes_Somos">Somos Mozione</h1>
+			<article id="Quienes_Somos">
+				<h4 class="Quienes_Somos">
+					MOZIONE AUTOMOTORES, Es una empresa dedicada a la comercialización de las principales marcas de
+					vehículos del mercado automotor. En Mozione ofrecemos una amplia gama de vehículos con fines
+					comerciales y particulares, siendo nuestro objetivo y compromiso principal, la satisfacción de
+					nuestros clientes a la hora de obtener el mismo. Asimismo, contamos con asesores comerciales que nos
+					permite ofrecerle a nuestros clientes un adecuado asesoramiento sobre las características
+					principales y estados reales de nuestros vehículos, diferentes planes de financiación y tasaciones.
+				</h4>
+			</article>
+		</section>
+	</main>
+
+	<!-- INICIO FOOTER-->
+
+	<footer class="footer bg-black">
+		<div class="container-fluid">
+			<div class="row p-5 pb-2">
+				<div class="img-fluid">
+					<img src="../assets/Img/logo-web_Mesa-de-trabajo-1.png" class="img-fluid" alt="Logo Mozione">
+				</div>
+			</div>
+
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Links</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Inicio</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Quienes Somos</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Usados</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Financiados</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Detailing</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Motos</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Privacidad</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Politica de Privacidad</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Reclamos</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Soporte</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">FAQ</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-3">
+			<p class="h5 mb-3">Contacto</p>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Instagram</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Facebook</a>
+			</div>
+			<div class="mb-2">
+				<a class="text-secondary text-decoration-none" href="#">Twitter</a>
+			</div>
+		</div>
+
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+
+</body>
+
+</html>

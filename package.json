@@ -1,0 +1,29 @@
+{
+  "name": "desarrollos_alan_ozzan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-AlanOzzan/Desarrollos_Alan_Ozzan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-AlanOzzan/Desarrollos_Alan_Ozzan/issues"
+  },
+  "homepage": "https://github.com/Dev-AlanOzzan/Desarrollos_Alan_Ozzan#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  },
+  "keywords": [],
+  "description": ""
+}
